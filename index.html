@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+
+    <body>
+        <h1>JohnChampion's Calc App</h1>
+        <hr /><br />
+            <div id="container">
+                <form name="calc">
+                    <input type="text" name="output" placeholder="0">
+                    <br />
+
+                    <input type="button" value=" 1 " onclick="document.calc.output.value+='1'">
+                    <!--onclick is a html feature, it gets the work done, but in real world
+                    programming it is good practise not to use it instead use addEventListener
+                    which is a js function-->
+                    <input type="button" value=" 2 " onclick="document.calc.output.value+='2'"/>
+                    <input type="button" value=" 3 " onclick="document.calc.output.value+='3'"/>
+                    <input type="button" value=" / " onclick="document.calc.output.value+='/'"/>
+                    <br />
+
+                    <input type="button" value=" 4 " onclick="document.calc.output.value+='4'"/>
+                    <input type="button" value=" 5 " onclick="document.calc.output.value+='5'"/>
+                    <input type="button" value=" 6 " onclick="document.calc.output.value+='6'"/>
+                    <input type="button" value=" x " onclick="document.calc.output.value+='*'"/>
+                    <!--we used the "*" symbol because the this is what js will equate to the multiplication 
+                    symbol and "x" is just a letter so we can't use it-->
+                    <br />
+
+                    <input type="button" value=" 7 " onclick="document.calc.output.value+='7'"/>
+                    <input type="button" value=" 8 " onclick="document.calc.output.value+='8'"/>
+                    <input type="button" value=" 9 " onclick="document.calc.output.value+='9'"/>
+                    <input type="button" value=" - " onclick="document.calc.output.value+='-'"/>
+                    <br />
+
+                    <input type="button" value=" ( " onclick="document.calc.output.value+='('"/>
+                    <input type="button" value=" ) " onclick="document.calc.output.value+=')'"/>
+                    <input type="button" value=" 0 " onclick="document.calc.output.value+='0'"/>
+                    <input type="button" value=" + " onclick="document.calc.output.value+='+'"/>
+                    <br />
+
+                    <input type="button" value=" c " onclick="document.calc.output.value=''"/>
+                    <input type="button" value=" . " onclick="document.calc.output.value+='.'"/>
+                    <input type="button" value=" = " onclick="calculate()"/>
+                    <!--we use the "eval" function to evaluate everything. What code line
+                    45 does is that it all the above strings and converts them to mathematical 
+                    operations-->
+                    <input type="button" value=" % " onclick="document.calc.output.value+='%'"/>
+                    <br />
+                </form>
+            </div>
+        <br/><hr />
+
+        <script src="js/script.js" type="text/javascript"></script>
+    </body>
+</html>

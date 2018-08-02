@@ -1,0 +1,62 @@
+* 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+    background-image: url('../c.jpg');
+}
+
+hr
+{
+    height: 2px;
+    background-color: #666666;
+} 
+
+h1
+{
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    font-size: 50px;
+    padding: 30px;
+}
+
+#container
+{
+   position: relative;
+   width: 300px;
+   border: 3px solid #000;
+   margin: 30px auto; /*30px for the top and auto for the left and right*/ 
+   border-radius: 5px;
+   background-color: #666666;
+} 
+
+input[type=text]
+{
+    position: relative; /*relative to the parent container ie the div*/
+    display: block;
+    width: 90%;
+    margin: 10px auto 0px auto; /*top left bottom right*/
+    font-size: 20px;
+    /*border: 1px solid lightgray;*/
+    background-color: #cccccc;
+}
+
+input[type=button]
+{
+    position: relative;
+    background-color: #b3b3b3;
+    width: 20%;
+    margin: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+input[type=button]:hover /* the :hover is a pseudo selector*/
+{
+    background-color: #8c8c8c;
+}
